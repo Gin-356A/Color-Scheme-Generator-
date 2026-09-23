@@ -1,12 +1,12 @@
 let color = null
 
-document.addEventListener("chnage" , function(){
+document.addEventListener("change" , function(){
     color = document.getElementById("color-selected").value
     fetchColor()
 })
 
 function fetchColor(){
-    fetch(`https://www.thecolorapi.com/id?hex=${color}&format=JSON`)
+    fetch(`https://www.thecolorapi.com/id?hex=#${color}&format=JSON`)
     .then(response => response.json())
     .then(data => console.log(data))
 }
