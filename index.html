@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Color Picker</title>
+
+</head>
+<body>
+    <div class="hero-section width">
+        <input type="color" id="color-selected">
+
+        <select id="mode">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-Dark</option>
+            <option value="monochrome-light">Monochrome-Light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-Complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+        </select>
+
+        <button class="btn">Get Color Scheme</button>
+    </div>
+
+    
+    <div class="color-scheme width">
+
+        <ul>
+            <li>
+                <div class="color-view"></div>
+                <p>#23425</p>
+            </li>
+            <li>
+                <div class="color-view"></div>
+                <p>#123415</p>
+            </li>
+            <li>
+                <div class="color-view"></div>
+                <p>#123415</p>
+            </li>
+            <li>
+                <div class="color-view"></div>
+                <p>#123415</p>
+            </li>
+            <li>
+                <div class="color-view"></div>
+                <p>#123415</p>
+            </li>
+        </ul>
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
