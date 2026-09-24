@@ -1,49 +1,162 @@
-body{
-    margin: 0;
-    padding: 0;
+
+* {
+    box-sizing: border-box;
 }
 
-/* Container  */
+body {
+    margin: 0;
+    padding: 1rem;
+
+    background-color: #111827;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main width */
 
 .width {
-    width: 600px;
+    width: 100%;
     max-width: 600px;
+
     margin-left: auto;
     margin-right: auto;
-    background-color: #1F2937;
 }
 
-/* Selection of Color section */
-.hero-section{
+
+/* Color selection */
+
+.hero-section {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    height: 4em;
-    margin-top: 1em;
-    border-top: 2px solid black;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding: 1rem;
+
+    background-color: #1F2937;
+
+    border: 2px solid black;
 }
 
-/* Selction fo display color and hex code */
 
-.color-scheme ul{
-    margin-top: 0;
+/* Color picker */
+
+#color-selected {
+    width: 50px;
+    height: 40px;
+
+    padding: 2px;
+
+    border: 1px solid #6B7280;
+    border-radius: 5px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+
+/* Mode selection */
+
+#mode {
+    flex: 1;
+
+    height: 40px;
+
+    padding: 0 0.75rem;
+
+    color: #D5D4D8;
+    background-color: #374151;
+
+    border: 1px solid #6B7280;
+    border-radius: 5px;
+
+    font-size: 0.9rem;
+
+    cursor: pointer;
+}
+
+
+/* Button */
+
+.btn {
+    height: 40px;
+
+    padding: 0 1rem;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    background-color: #3B82F6;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2563EB;
+}
+
+
+/* Color scheme */
+
+.color-scheme {
+    background-color: #1F2937;
+
+    border: 2px solid black;
+    border-top: none;
+}
+
+
+/* Color list */
+
+.color-list {
     display: flex;
-    flex-direction: row;
-    gap: 0;
-}
-.color-scheme ul li {
+
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
 
+/* Individual color */
 
-.color-view{
-    height: 400px;
-    width: 100px;
-    border: 2px solid black;
+.color-item {
+    flex: 1;
+
+    min-width: 0;
+
+    text-align: center;
 }
 
-p{
-    font-size: 1rem;
+
+/* Image for each color */
+
+.color-image {
+    display: block;
+
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+}
+
+
+/* Hex value */
+
+.hex-value {
+    margin: 0;
+
+    padding: 1rem 0;
+
     color: #D5D4D8;
+
+    font-size: 0.9rem;
+    font-weight: bold;
 }
